@@ -136,11 +136,13 @@ Create and navigate through relational data in MongoDB
 
 ####Setup
 * startup mongoDB with `mongod`
-* `cd` into the folder `exercise` in this directory
+* `cd` into the folder `starter-code` in this directory
+* `npm install` to bring down all the dependencies
 * `node console.js` to enter into a REPL where you can interact with your DB
 
 ####Tips
 * save your successful code into your text-editor for each successful step
+* <command> + <up> will bring you to the last thing you entered in the repl 
 
 > Note: All your models will be nested inside an object `db`.
 
