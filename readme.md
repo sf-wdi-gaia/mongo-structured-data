@@ -114,16 +114,16 @@ The most popular, modern convention is RESTful routing. Here is an example of an
 || | |
 |---|---|---|
 | **HTTP Verb** | **Path** | **Description** | **Controller#action**
-| GET | /store | Get all stores | stores#index |
-| POST | /store | Create a store | stores#create |
-| GET | /store/:id | Get a store | stores#show |
-| PUT/PATCH | /store/:id | Update a store | stores#update |
-| DELETE | /store/:id | Delete a store | stores#destroy |
-| GET | /store/:storeId/items | Get all items from a store | items#index |
-| POST | /store/:storeId/items | Create an item for a store | items#create |
-| GET | /store/:storeId/items/:itemId | Get an item from a store | items#show |
-| PUT/PATCH | /store/:storeId/items/:itemId | Update an item from a store | items#update |
-| DELETE | /store/:storeId/items/:itemId | Delete an item from a store | items#destroy |
+| GET | /stores | Get all stores | stores#index |
+| POST | /stores | Create a store | stores#create |
+| GET | /stores/:id | Get a store | stores#show |
+| PUT/PATCH | /stores/:id | Update a store | stores#update |
+| DELETE | /stores/:id | Delete a store | stores#destroy |
+| GET | /stores/:storeId/items | Get all items from a store | items#index |
+| POST | /stores/:storeId/items | Create an item for a store | items#create |
+| GET | /stores/:storeId/items/:itemId | Get an item from a store | items#show |
+| PUT/PATCH | /stores/:storeId/items/:itemId | Update an item from a store | items#update |
+| DELETE | /stores/:storeId/items/:itemId | Delete an item from a store | items#destroy |
 
 *In routes resources should not be nested more than one level deep*
 >Note: These routes omit the commonly used `#new` and `#edit` actions, which is common if the server is rendering HTML instead of JSON.
