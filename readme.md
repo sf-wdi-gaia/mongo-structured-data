@@ -1,16 +1,16 @@
-#Relationships in Mongo
+#Structured Data in Mongo
 
 
 ##Learning Objectives
 
 | Objectives |
 | :---- |
-| Gain a deeper understanding of Mongo/Mongoose's ability to handle relationships |
+| Gain a deeper understanding of Mongo's ability to handle data organization |
 | Compare and contrast embedded & referenced data |
 | Design routes for nested resources |
 | Build the appropriate queries for nested relationships |
 
-##Relationships in Mongo
+##Data Organization in Mongo
 
 There are two ways to form relationships in a document-based database...
 
@@ -18,11 +18,15 @@ There are two ways to form relationships in a document-based database...
 
 * **Embedded Data** is a document directly nested *inside* of other data
 
+> Uniquely identifying information, address information, user-generated content.
+
 ####Referenced Data
 
 * **Referenced Data** contains an *id* of a document that can be found somewhere else
 
-There is a tradeoff between *efficiency* and *consistency* depending on which one you choose. Neither is better or worse, they are just different.
+> Memberships, relationships, shared content
+
+There is generally a tradeoff between *efficiency* (embedded) and *consistency* (referenced) depending on which one you choose.
 
 ###Scenario: 
 
@@ -32,7 +36,7 @@ For each situation would you use embedded or referenced data? Discuss with a par
 * A `Food` that has many `Ingredients`?
 
 
-###Implementation
+###Implementation with Mongoose
 
 Tip: Noteworthy code lines are denoted with the comment: `NOTE`.
 
