@@ -1,14 +1,33 @@
-#Structured Data in Mongo
+<!--
+Creator: Ilias Tsangaris
+Market: SF
+-->
 
+![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
-##Learning Objectives
+# Structured Data in Mongo
 
-| Objectives |
-| :---- |
-| Gain a deeper understanding of Mongo's ability to handle data organization |
-| Compare and contrast embedded & referenced data |
-| Design routes for nested resources |
-| Build the appropriate queries for nested relationships |
+### Why is this important?
+<!-- framing the "why" in big-picture/real world examples -->
+*This workshop is important because:*
+
+Organizing stored data in a predictable way essential to making it useful and actionable when an application performs searches and queries to derive information for its users.
+
+### What are the objectives?
+<!-- specific/measurable goal for students to achieve -->
+*After this workshop, developers will be able to:*
+
+* Gain a deeper understanding of Mongo's ability to handle data organization
+* Compare and contrast embedded & referenced data
+* Design routes for nested resources
+* Build the appropriate queries for nested relationships
+
+### Where should we be now?
+<!-- call out the skills that are prerequisites -->
+*Before this workshop, developers should already be able to:*
+
+* CRUD data in Mongo
+* Use Mongoose to write a [Schema](http://mongoosejs.com/docs/guide.html)
 
 ##Data Organization in Mongo
 
@@ -49,7 +68,7 @@ var foodSchema = new Schema({
     default: ""
   },
   ingredients: [{
-    type: Schema.Types.ObjectId,  // NOTE
+    type: Schema.Types.ObjectId,  // NOTE: Referencing
     ref: 'Ingredient'
   }]
 });
@@ -81,7 +100,7 @@ var userSchema = new Schema({
     type: String,
     default: ""
   },
-  tweets: [tweetSchema]	  // NOTE
+  tweets: [tweetSchema]	  // NOTE: Embedding
 });
 ```
 
@@ -123,7 +142,7 @@ Create and navigate through relational data in MongoDB
 ####Tips
 * save your successful code into your text-editor for each successful step
 
->Note: All your models will be nested inside an object `db`.
+> Note: All your models will be nested inside an object `db`.
 
 ####Steps
 
