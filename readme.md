@@ -142,7 +142,7 @@ Create and navigate through relational data in MongoDB
 
 ####Tips
 * save your successful code into your text-editor for each successful step
-* <command> + <up> will bring you to the last thing you entered in the repl 
+* `<command>` + `<up>` will bring you to the last thing you entered in the repl 
 
 > Note: All your models will be nested inside an object `db`.
 
